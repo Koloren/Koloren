@@ -1,0 +1,298 @@
+body {
+    /* min-width: 320px; */
+    max-width: 540px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: Arial, Helvetica;
+    background-color: #f2f2f2;
+    
+  }
+
+a {
+  text-decoration: none;
+}
+
+.search-index {
+  display: flex;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 44px;
+  min-width: 320px;
+  max-width: 540px;
+  background-color: #F6F6F6;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.search-index .search {
+  border: 1px solid #ccc;
+  flex: 1;
+  margin: 7px 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px #ccc;
+  font-size: 12px;
+  color: #666;
+  line-height: 30px;
+  padding-left: 20px;
+}
+
+.search-index .search::before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 13px;
+  width: 15px;
+  height: 15px;
+  background: url(../images/sprite.png) no-repeat -60px -277px;
+  background-size: 104px auto;
+}
+
+.search-index a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: #59A8DD;
+  height: 38px;
+  width: 44px;
+  text-align: center;
+  font-size: 12px;
+  padding: 3px 0;
+}
+
+.search-index a::before {
+  content: "";
+  display: block;
+  width: 23px;
+  height: 23px;
+  background: url(../images/sprite.png) no-repeat -59px -192px;
+  background-size: 104px auto;
+}
+
+.one {
+  width: 100%;
+}
+
+.one img {
+  width: 100%;
+   margin-top: 44px;
+}
+
+.two, .three, .four{
+  display: flex;
+}
+
+.two, .threeAll, .four, .five, .six {
+  background-color: #FFFFFF;
+  margin: 0 5px;
+}
+
+.two div {
+  flex: 1;
+  font-size: 12px;
+}
+
+.two div a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+
+.two div a [class^="icon"] {
+  content: "";
+  width: 32px;
+  height: 32px;
+  margin-bottom: 3px;
+  background: url(../images/localnav_bg.png) no-repeat 0 0;
+  background-size: 32px auto;
+}
+
+.two div a .icon-2 {
+  background-position: 0 -32px;
+}
+.two div a .icon-3 {
+  background-position: 0 -64px;
+}
+.two div a .icon-4 {
+  background-position: 0 -96px;
+}
+.two div a .icon-5 {
+  background-position: 0 -128px;
+}
+
+.two, .threeAll, .four {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.three {
+  height: 88px;
+  text-align: center;
+  line-height: 44.5px;
+  font-size: 14px;
+  color: white;
+}
+
+.threeAll .three:nth-child(2) {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+.three .big{
+  box-sizing: content-box;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.three .big:nth-child(1) {
+  background: url(../images/hotel.png) no-repeat bottom center;
+  background-size: 121px auto;
+}
+
+.three:nth-child(1) {
+  background: -webkit-linear-gradient(left, #FA5A55, #FA994D);
+}
+.three:nth-child(2) {
+  background: -webkit-linear-gradient(left, #4B90ED, #53BCED);
+}
+.three:nth-child(3) {
+  background: -webkit-linear-gradient(left, #34C2A9, #6CD559);
+}
+
+.three .big:nth-child(2) {
+  border-right: white solid 1px;
+  border-left: white solid 1px;
+}
+
+.three .big .small {
+  flex: 1;
+}
+
+.three .big .small:nth-child(1) {
+  border-bottom: white solid 1px;
+}
+
+.four {
+  height: 116px;
+  flex-wrap: wrap;
+}
+
+.four div{
+  flex: 20%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 14px;
+}
+
+.four div [class^="subnav"] {
+  width: 22px;
+  height: 22px;
+  background: url(../images/subnav-bg.png) no-repeat 0 0;
+  background-size: 24px auto;
+}
+
+.four div .subnav-2 {
+  background-position: 2px -25px;
+}
+.four div .subnav-3 {
+  background-position: 1px -54px;
+}
+.four div .subnav-4 {
+  background-position: 0px -85px;
+}
+.four div .subnav-5 {
+  background-position: 0px -112px;
+}
+.four div .subnav-6 {
+  background-position: 3px -140px;
+}
+.four div .subnav-7 {
+  background-position: 0px -169px;
+}
+.four div .subnav-8 {
+  background-position: 0px -222px;
+}
+.four div .subnav-9 {
+  background-position: 3px -247px;
+}
+.four div .subnav-10 {
+  background-position: 0px -276px;
+}
+
+.five {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 59px;
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+  position: relative;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin-top: 4px;
+}
+
+.five h2 {
+  text-indent: -999px;
+}
+
+.five h2::after {
+  content: "";
+  width: 71px;
+  height: 15px;
+  position: absolute;
+  background: url(../images/hot.png) no-repeat -1px -19px;
+  background-size: 79px auto;
+  top: 21px;
+  left: 10px;
+}
+
+.five a{
+  position: relative;
+  padding: 3px 20px 3px 10px;
+  background: -webkit-linear-gradient(left, #FF5271, #FF6AC4);
+  border-radius: 10px;
+  color: white;
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.five a::after{
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+  position: absolute;
+  transform: rotate(45deg);
+  top: 6px;
+}
+
+.six {
+  margin-bottom: 5px;
+}
+
+.six .row {
+  display: flex;
+  border-bottom: 1px solid #eee;
+}
+
+.six .row a {
+  flex: 1;
+}
+
+.six .row a:nth-child(1) {
+  border-right: 1px solid #eee;
+}
+
+.six .row a img {
+  width: 100%;
+}
+
